@@ -1,0 +1,80 @@
+.p_header a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.arrow {
+    transform: rotate(180deg);
+    width: 40px;
+}
+
+.all_projects h1 {
+    font-size: 1.6rem;
+    font-size: clamp(1.6rem, 1.48rem + 0.6000000000000001vw, 2.2rem);
+    margin-bottom: 32px;
+}
+
+.p {
+    padding: 1.5rem;
+    outline: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+}
+
+.p img {
+    border-radius: 0.5rem;
+}
+
+.p_title {
+    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 1.23rem + 0.8500000000000001vw, 2.25rem);
+    margin-top: 1.5rem;
+}
+
+.p_desc {
+    font-size: 0.85rem;
+    font-size: clamp(0.85rem, 0.77rem + 0.4vw, 1.25rem);
+    margin-top: 1rem;
+}
+
+.p_container {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.p_c {
+    display: grid;
+    gap: 1rem;
+}
+
+.p_link {
+    width: fit-content;
+    padding: 0.25rem 1rem;
+    color: var(--btn-text);
+    display: flex;
+    align-items: center;
+    background-color: var(--btn-color);
+    font-weight: bold;
+    border-radius: 0.25rem;
+    transition: all 300ms ease-in-out;
+}
+
+.p_link:hover {
+    outline: var();
+}
+
+.p_link p {
+    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 0.71rem + 0.19999999999999996vw, 0.95rem);
+}
+
+.p_icon {
+    width: 30px;
+}
+
+@media (min-width: 37.5rem) {
+    .p_c {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

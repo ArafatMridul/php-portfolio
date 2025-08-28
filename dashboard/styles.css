@@ -1,0 +1,142 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    background: #f9fafc;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+header {
+    background: #1e293b;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f1f5f9;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Main container */
+.main {
+    max-width: 1400px;
+    margin: auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.main h1 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #1e293b;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #2563eba9;
+}
+
+.btn-danger {
+    background: #f51720;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #f5171ea9;
+}
+
+.btn-green {
+    background: #59981a;
+    color: #fff;
+}
+
+.btn-green:hover {
+    background: #59981aa9;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+}
+
+thead {
+    background: #2563eb;
+    color: #fff;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.9rem;
+}
+
+/* Alternate row shading */
+tbody tr:nth-child(even) {
+    background: #f9fafc;
+}
+
+/* Action links */
+td a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #2563eb;
+    transition: color 0.3s ease;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

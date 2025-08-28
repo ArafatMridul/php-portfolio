@@ -1,0 +1,67 @@
+.contact h2 {
+    font-size: 1.6rem;
+    font-size: clamp(1.6rem, 1.48rem + 0.6000000000000001vw, 2.2rem);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 32px;
+}
+
+.name,
+.email,
+.phone,
+.subject,
+.message {
+    width: 100%;
+    outline: none;
+    font-size: 0.85rem;
+    font-size: clamp(0.85rem, 0.82rem + 0.15000000000000002vw, 1rem);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    color: var(--text-color);
+    font-weight: 600;
+    border: none;
+    outline: 1px solid var(--border-color);
+}
+
+.message {
+    resize: none;
+}
+
+.row {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.btn {
+    border: none;
+    background-color: var(--btn-color);
+    color: var(--btn-text);
+    padding-block: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.send {
+    width: 15px;
+}
+
+@media (min-width: 37.5rem) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

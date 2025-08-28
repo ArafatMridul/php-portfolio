@@ -1,0 +1,46 @@
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.github,
+.linkedin {
+    width: 15px;
+}
+
+.social {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    outline: 1px solid var(--bg-color);
+}
+
+.dash {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.made {
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (min-width: 37.5rem) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

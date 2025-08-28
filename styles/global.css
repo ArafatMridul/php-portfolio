@@ -1,0 +1,146 @@
+@import url(./header/headerGlobal.css);
+@import url(./hero/globalHero.css);
+@import url(./projects/globalProjects.css);
+@import url(./timeline/globalTimeline.css);
+@import url(./contact/globalContact.css);
+@import url(./all_projects/all_project.css);
+@import url(./footer/footer.css);
+
+:root {
+    --bg-color: #0a0a0a;
+    --text-color: #fafafa;
+    --stext-color: #a3a3a3;
+    --border-color: oklch(86.856% 0.0217 252.604 / 0.31);
+    --card-hover: #262626;
+    --btn-color: #fafafa;
+    --btn-text: #0a0a0a;
+}
+
+.dark {
+    --bg-color: #0a0a0a;
+    --text-color: #fafafa;
+    --stext-color: #a3a3a3;
+    --border-color: oklch(86.856% 0.0217 252.604 / 0.31);
+    --card-hover: #262626;
+    --btn-color: #fafafa;
+    --btn-text: #0a0a0a;
+}
+
+.light {
+    --bg-color: #f5efff;
+    --text-color: #0a0a0a;
+    --stext-color: #737373;
+    --border-color: oklch(86.856% 0.0217 252.604);
+    --card-hover: rgba(128, 128, 128, 0.193);
+    --btn-color: #0a0a0a;
+    --btn-text: #fafafa;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+img,
+picture,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* UTILITIES */
+.container {
+    max-width: 40rem;
+    padding: 24px;
+    margin-inline: auto;
+    border-bottom: 1px solid var(--border-color);
+}
+
+@keyframes blink {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 37.5rem) {
+    .container {
+        padding-inline: 0;
+    }
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    transform: rotate(-90deg);
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.scroll-top-btn img {
+    width: 30px;
+}
+
+.scroll-top-btn:hover {
+    background: #555;
+}

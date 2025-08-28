@@ -1,0 +1,105 @@
+.hero {
+    position: relative;
+    margin-top: 2rem;
+    z-index: 20;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    margin-block: 1rem;
+}
+
+.intro_h1 {
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
+    border-bottom: 1px solid var(--border-color);
+    padding-block: 0.25rem;
+    width: fit-content;
+    border-bottom: none;
+}
+
+.available {
+    font-size: 0.65rem;
+    font-size: clamp(0.65rem, 0.62rem + 0.15000000000000002vw, 0.8rem);
+    color: var(--stext-color);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 4px;
+}
+
+.dot {
+    display: block;
+    height: 8px;
+    width: 8px;
+    background-color: oklch(62.7% 0.194 149.214);
+    border-radius: 100%;
+    animation: blink 5s infinite;
+}
+
+.pp {
+    width: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    outline: 2px solid oklch(70.4% 0.04 256.788);
+    outline-offset: 3px;
+}
+
+.wave {
+    display: inline-block;
+    transform-origin: 70% 70%;
+}
+
+.wave:hover {
+    animation: wave 1.5s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(14deg);
+    }
+    30% {
+        transform: rotate(-8deg);
+    }
+    45% {
+        transform: rotate(14deg);
+    }
+    60% {
+        transform: rotate(-4deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.about {
+    padding-inline: 1rem;
+    margin-top: 4px;
+    margin-bottom: 32px;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding-block: 1rem;
+}
+
+.about p {
+    font-size: 0.85rem;
+    font-size: clamp(0.85rem, 0.62rem + 1.15vw, 1.4rem);
+    font-weight: 500;
+}
+
+.s_heading {
+    font-size: 1.6rem;
+    font-size: clamp(1.6rem, 1.48rem + 0.6000000000000001vw, 2.2rem);
+}
